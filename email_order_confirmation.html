@@ -53,13 +53,216 @@
       margin-top: 40px;
       margin-bottom: 70px;
     }
+    .wrapper {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .order-number {
+      margin-top: 43px;
+      background: #ecf1f4;
+      border-radius: 10px;
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .order-number a {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #711542;
+      text-decoration: none;
+    }
+    .order-number a::before {
+      content: '';
+      background-image: url(order_confirm.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 19px;
+      height: 12px;
+      margin-right: 19px;
+    }
+    .order-description {
+      font-size: 16px;
+      line-height: 160%;
+      color: #24243f;
+      max-width: 420px;
+      margin: 0 auto;
+      margin-top: 37px;
+    }
+    .order-description a {
+      text-decoration: none;
+      color: #24243f;
+      font-weight: 700;
+    }
+    .order-description p:first-child {
+      margin-bottom: 30px;
+    }
+    .team {
+      max-width: 420px;
+      margin: 0 auto;
+      margin-top: 18px;
+    }
+    .team p {
+      font-size: 16px;
+      line-height: 160%;
+      color: #7b7b7a;
+    }
+    .order-details {
+      background: #ffffff;
+      border-radius: 10px;
+      width: 461px;
+      margin: 0 auto;
+      margin-top: 23px;
+    }
+    .order-details h2 {
+      font-size: 26px;
+      line-height: 110%;
+      color: #711542;
+      margin-left: 40px;
+      padding-top: 34px;
+    }
+    .order-details-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .order-details-items table {
+      width: 100%;
+      min-height: 50px;
+      border-collapse: collapse;
+      margin: 34px 0 46px 36px;
+    }
+    .order-details-items table tbody tr td {
+      width: 50%;
+    }
+    .order-details-items table tbody tr .order-specs {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 190%;
+      color: #24243f;
+    }
+    .order-details-items table tbody tr .order-descrp {
+      font-size: 16px;
+      line-height: 190%;
+      color: #24243f;
+    }
+    .purchased-items {
+      width: 461px;
+      margin: 0 auto;
+      border-top: 1px solid rgb(188, 189, 191, 0.3);
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+    .purchased-items:nth-child(2) {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #24243f;
+    }
+    .purchased-items .description-item span {
+      font-size: 14px;
+      line-height: 130%;
+      color: #7b7b7a;
+    }
+    .purchased-items .description-item h2 {
+      font-size: 16px;
+      line-height: 150%;
+      color: #24243f;
+      margin: 10px 0;
+    }
+    .purchased-items .description-item p {
+      font-size: 12px;
+      line-height: 140%;
+      color: #bcbdbf;
+    }
+    .purchased-items .price-item {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      color: #24243f;
+    }
+    .subtotal {
+      width: 461px;
+      margin: 0 auto;
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .subtotal .subtotal-left {
+      text-align: right;
+    }
+    .subtotal .sb {
+      font-size: 16px;
+      line-height: 150%;
+      color: #24243f;
+    }
+    .subtotal .sh {
+      font-size: 16px;
+      line-height: 150%;
+      color: #bcbdbf;
+    }
+    .subtotal .tl {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      color: #24243f;
+    }
+    .subtotal .tax {
+      font-size: 12px;
+      line-height: 140%;
+      color: #bcbdbf;
+    }
+    .subtotal .sb,
+    .sh,
+    .tl {
+      margin-bottom: 5px;
+    }
+    .questions {
+      background: #ffffff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 461px;
+      height: 196px;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+    .questions p {
+      font-size: 18px;
+      line-height: 160%;
+      color: #24243f;
+    }
+    .questions .confirm-button {
+      margin-top: 18px;
+    }
+    .questions .confirm-button a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #711542;
+      border-radius: 6px;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 16px 64px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+    }
     .footer-container {
       text-align: center;
       margin: 0 auto;
       max-width: 540px;
       border-top: 2px solid #ecf1f4;
       padding-top: 40px;
-      margin-top: 30px;
+      margin-top: 68px;
     }
     .footer-container h2 {
       margin-bottom: 40px;
@@ -138,7 +341,115 @@
     <main>
       <div class="wrapper">
         <section class="order-number">
-          
+          <a href="">Your order 210907-1346F6-UA is accepted</a>
+        </section>
+        <section class="order-description">
+          <p>
+            Thank you for choosing <br />
+            <a href="">henschel-shop.de</a>!
+          </p>
+          <p>
+            Upon receipt of payment you will receive a list with confirmation of
+            the transfer of your order to the warehouse for picking.
+          </p>
+        </section>
+        <section class="team">
+          <p>
+            Cheers,<br />
+            The Henschel Team
+          </p>
+        </section>
+        <section class="order-details">
+          <h2>Order details</h2>
+          <div class="order-details-items">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="order-specs">Order number</td>
+                  <td class="order-descrp">210907-1346F6-UA</td>
+                </tr>
+                <tr>
+                  <td class="order-specs">Type of delivery:</td>
+                  <td class="order-descrp">Courier</td>
+                </tr>
+                <tr>
+                  <td class="order-specs">Method of payment:</td>
+                  <td class="order-descrp">Bank card</td>
+                </tr>
+                <tr>
+                  <td class="order-specs">Date of order:</td>
+                  <td class="order-descrp">2021-09-07 16:52:08</td>
+                </tr>
+                <tr>
+                  <td class="order-specs">Status:</td>
+                  <td class="order-descrp">Paid</td>
+                </tr>
+                <tr>
+                  <td class="order-specs">Phone number:</td>
+                  <td class="order-descrp">+380631234567</td>
+                </tr>
+                <tr>
+                  <td class="order-specs">Delivery addresses:</td>
+                  <td class="order-descrp">
+                    Dinkelberger Str. 14, 34286 Spangenberg, Germany
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="cart">
+          <div class="purchased-items">
+            <div class="purchased-item">
+              <img src="puechased-items.png" alt="" />
+            </div>
+            <div class="description-item">
+              <span>May</span>
+              <h2>
+                Mey Damen Tunika <br />
+                Emila Pale Blush
+              </h2>
+              <p>Color: Gray</p>
+              <p>Size: XS</p>
+              <p>Q-ty: 1</p>
+            </div>
+            <div class="price-item">€ 1.685</div>
+          </div>
+          <div class="purchased-items">
+            <div class="purchased-item">
+              <img src="puechased-items.png" alt="" />
+            </div>
+            <div class="description-item">
+              <span>May</span>
+              <h2>
+                Mey Damen Tunika <br />
+                Emila Pale Blush
+              </h2>
+              <p>Color: Gray</p>
+              <p>Size: XS</p>
+              <p>Q-ty: 1</p>
+            </div>
+            <div class="price-item">€ 1.685</div>
+          </div>
+          <div class="subtotal">
+            <div class="subtotal-right">
+              <p class="sb">Subtotal</p>
+              <p class="sh">Shipping</p>
+              <p class="tl">Total</p>
+              <p class="tax">* Preise inkl. MwSt. zzgl. Versandkosten</p>
+            </div>
+            <div class="subtotal-left">
+              <p class="sb">€ 3.685</p>
+              <p class="sh">€ 0</p>
+              <p class="tl">€ 3.685</p>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+          <p>If you have any questions, contact us</p>
+          <div class="confirm-button">
+            <a href="">Сontact Us</a>
+          </div>
         </section>
       </div>
     </main>
