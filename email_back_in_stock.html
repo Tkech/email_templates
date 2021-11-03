@@ -34,6 +34,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 10px;
     }
     .shop-now p {
       font-weight: 600;
@@ -125,16 +126,73 @@
     }
     table {
       width: 100%;
-      min-height: 50px;
       border-collapse: collapse;
+      margin-top: 30px;
     }
 
     table tbody tr {
     }
 
-    table tbody tr td {
+    table tbody tr td:first-child {
+      padding-left: 30px;
+      padding-bottom: 30px;
+    }
+    table tbody tr td:nth-child(2) {
+      padding-right: 30px;
+      padding-bottom: 30px;
+    }
+    table tbody tr td .tcontainer {
+      width: 260px;
+      height: 404px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    .tcontainer .img-card {
+      padding: 20px 20px 0;
+    }
+    .tcontainer h2 {
+      margin: 20px 0 15px 20px;
+      font-size: 26px;
+      line-height: 110%;
+      letter-spacing: -0.03em;
+      font-weight: 400;
+      color: #24243f;
+    }
+    .tcontainer .old-price {
+      margin-left: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .tcontainer .price-range {
       width: 50%;
-      text-align: center;
+      color: #711542;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 180%;
+    }
+    .tcontainer .price-range .old-price-range {
+      font-size: 18px;
+      line-height: 180%;
+      text-decoration-line: line-through;
+      color: #7b7b7a;
+    }
+    .tcontainer .buy-btn {
+      width: 50%;
+      background-color: #711542;
+      margin: 0;
+      padding: 16px 0;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+    .tcontainer .buy-btn p {
+      border: none;
+      padding: 0;
+      color: #fff;
+    }
+    .tcontainer .buy-btn svg path {
+      fill: #fff;
+      stroke: #fff;
     }
     .topics {
       border-top: 2px solid #ecf1f4;
@@ -208,36 +266,36 @@
       user-select: all;
     }
     .footer-container {
-        text-align: center;
-        margin: 0 auto;
-        max-width: 540px;
-        border-top: 2px solid #ecf1f4;
-        padding-top: 40px;
-        margin-top: 30px;
-      }
-      .footer-container h2 {
-        margin-bottom: 40px;
-        color: #24243f;
-        font-size: 26px;
-        line-height: 110%;
-      }
-      .footer-container .social-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 100px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-      }
-      .footer-container .unsubscribe a {
-        font-size: 16px;
-        line-height: 160%;
-        text-decoration-line: underline;
-        color: #7b7b7a;
-      }
-      .footer-container .unsubscribe a span {
-        color: #24243f;
-      }
+      text-align: center;
+      margin: 0 auto;
+      max-width: 540px;
+      border-top: 2px solid #ecf1f4;
+      padding-top: 40px;
+      margin-top: 30px;
+    }
+    .footer-container h2 {
+      margin-bottom: 40px;
+      color: #24243f;
+      font-size: 26px;
+      line-height: 110%;
+    }
+    .footer-container .social-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .footer-container .unsubscribe a {
+      font-size: 16px;
+      line-height: 160%;
+      text-decoration-line: underline;
+      color: #7b7b7a;
+    }
+    .footer-container .unsubscribe a span {
+      color: #24243f;
+    }
   </style>
   <body>
     <header>
@@ -298,44 +356,163 @@
           <tbody>
             <tr>
               <td>
-                <div>
-                  <img src="Mask Group.png" alt="LOgo" />
-                </div>
-                <div>
-                  <div class="old-price">
-                    <p>€ 65.00</p>
-                    <p>€ 65.00</p>
+                <div class="tcontainer">
+                  <div class="img-card">
+                    <img src="Mask Group.png" alt="LOgo" />
                   </div>
-                  <a href="#">Buy</a>
+                  <h2>Blue T-shirt</h2>
+                  <div class="old-price">
+                    <div class="price-range">
+                      <p class="old-price-range">€ 95.00</p>
+                      <p>€ 65.00</p>
+                    </div>
+                    <a href="#" class="shop-now buy-btn">
+                      <p>Buy</p>
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 14L14 1"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.71436 1H14.0001V10.2857"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </td>
               <td>
-                <div>
-                  <img src="Mask Group.png" alt="LOgo" />
-                </div>
-                <div>
-                  <span>€ 65.00</span>
-                  <a href="#">Buy</a>
+                <div class="tcontainer">
+                  <div class="img-card">
+                    <img src="Mask Group.png" alt="LOgo" />
+                  </div>
+                  <h2>Blue T-shirt</h2>
+                  <div>
+                    <div class="old-price">
+                      <div class="price-range">
+                        <p>€ 65.00</p>
+                      </div>
+                      <a href="#" class="shop-now buy-btn">
+                        <p>Buy</p>
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 14L14 1"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.71436 1H14.0001V10.2857"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </td>
             </tr>
             <tr>
               <td>
-                <div>
-                  <img src="Mask Group.png" alt="LOgo" />
-                </div>
-                <div>
-                  <span>€ 65.00</span>
-                  <a href="#">Buy</a>
+                <div class="tcontainer">
+                  <div class="img-card">
+                    <img src="Mask Group.png" alt="LOgo" />
+                  </div>
+                  <h2>Blue T-shirt</h2>
+
+                  <div class="old-price">
+                    <div class="price-range">
+                      <p>€ 65.00</p>
+                    </div>
+                    <a href="#" class="shop-now buy-btn">
+                      <p>Buy</p>
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 14L14 1"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.71436 1H14.0001V10.2857"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </td>
               <td>
-                <div>
-                  <img src="Mask Group.png" alt="LOgo" />
-                </div>
-                <div>
-                  <span>€ 65.00</span>
-                  <a href="#">Buy</a>
+                <div class="tcontainer">
+                  <div class="img-card">
+                    <img src="Mask Group.png" alt="LOgo" />
+                  </div>
+                  <h2>Blue T-shirt</h2>
+                  <div>
+                    <div class="old-price">
+                      <div class="price-range">
+                        <p>€ 65.00</p>
+                      </div>
+                      <a href="#" class="shop-now buy-btn">
+                        <p>Buy</p>
+                        <svg
+                          width="15"
+                          height="15"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1 14L14 1"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.71436 1H14.0001V10.2857"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </td>
             </tr>
